@@ -1,0 +1,37 @@
+@theme {
+	--color-mainCyan: var(--color-base-content);
+	--color-chartBG: var(--color-base-100);
+	--flex-full:12;
+	--stroke-width-4:4px;
+	--animation-duration-100:100ms;
+	--animation-duration-200:200ms;
+	--animation-duration-250:250ms;
+	--animation-duration-300:300ms;
+	--animation-duration-350:350ms;
+	--animation-duration-350:500ms;
+	--animation-duration-600:600ms;
+	--animation-duration-800:800ms;
+	--animation-duration-1000:1000ms;
+}
+
+@utility animation-* {
+	animation-duration: --value(--animation-duration-*);
+}
+
+@utility flex-* {
+    flex: --value(--flex-*);
+}
+
+@utility d-init {
+	display:initial;
+}
+
+@utility h-revert {
+	height:revert;
+}
+
+@custom-variant active-link {
+	&.router-link-active {
+		@slot;
+	}
+}

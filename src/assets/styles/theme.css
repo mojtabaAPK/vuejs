@@ -1,0 +1,16 @@
+@plugin "daisyui" {
+	themes: light --default, dracula --prefersdark;
+}
+
+
+:root{
+    --main-bg-line-chart-cyan:var(--color-base-200);
+}
+
+[data-theme=light]{
+    --bg-chart:1 0 89.88;
+}
+
+[data-theme=dracula]{
+    --bg-chart:0.21 0.02 268;
+}

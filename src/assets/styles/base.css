@@ -1,0 +1,32 @@
+
+html {
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--color-base-200);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-info);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-content);
+}
