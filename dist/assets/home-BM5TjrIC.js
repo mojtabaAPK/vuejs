@@ -1,1 +1,0 @@
-import{_ as e,c as s,a as t,o as n}from"./index-CfWtLgUW.js";const r={class:"size-full flex flex-row justify-center items-center"};const l=e({},[["render",function(e,l){return n(),s("div",r,l[0]||(l[0]=[t("h1",null,"welcome",-1)]))}]]);export{l as default};
