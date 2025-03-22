@@ -18,6 +18,14 @@
 	animation-duration: --value(--animation-duration-*);
 }
 
+@utility step-* {
+	&::before{
+		--step-bg:--value(--color-*);
+		--step-fg:--value(--color-*);
+		--step-fg:--value(--color-*-content);
+	}
+}
+
 @utility flex-* {
     flex: --value(--flex-*);
 }
