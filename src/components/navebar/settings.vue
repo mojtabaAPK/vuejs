@@ -10,7 +10,7 @@
 <script>
 
 
-import toggleTheme      from '@/components/toggleTheme.vue';
+import toggleTheme      from '@/components/navebar/toggleTheme.vue';
 import DropDown         from '@/components/navebar/DropDown.vue';
 
 
