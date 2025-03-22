@@ -1,1 +1,0 @@
-import{_ as e,c as s,a as t,o as n}from"./index-Cm7BKIR7.js";const r={class:"size-full flex flex-row justify-center items-center"};const a=e({},[["render",function(e,a){return n(),s("div",r,a[0]||(a[0]=[t("h1",null,"test",-1)]))}]]);export{a as default};
