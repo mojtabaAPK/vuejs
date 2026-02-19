@@ -1,7 +1,7 @@
 <template>
     <div class="loading-page">
         <div>
-            <progress/>
+            <span class="loading loading-ring loading-xl"></span>
         </div>
     </div>
 </template>
