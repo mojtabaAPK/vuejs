@@ -27,18 +27,7 @@ export default defineConfig({
 
 	build: {
 		ssr: false,
-		cssMinify: true,
-		minify: 'terser',
-
-		terserOptions: {
-			compress: {
-				inline: true,
-				booleans_as_integers: true,
-			},
-			format: {
-				comments: false,
-			},
-		}
+		cssMinify: true
 	},
 
 })
