@@ -6,12 +6,10 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
-		"preview": "vite preview",
-		"obfuscator": "node obfuscator.js"
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.0.13",
-		"terser": "^5.39.0",
 		"vue": "^3.5.13",
 		"vue-router": "^4.5.0"
 	},
@@ -19,7 +17,6 @@
 		"@vitejs/plugin-vue": "^5.2.1",
 		"daisyui": "^5.0.3",
 		"gh-pages": "^6.3.0",
-		"javascript-obfuscator": "^4.1.1",
 		"tailwindcss": "^4.0.14",
 		"vite": "^6.2.0"
 	}
