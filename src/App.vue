@@ -41,7 +41,7 @@ export default {
             this.mainLoading = false;
         });
 
-        document.setTheme(document.getTheme());
+        document.setTheme(document.getTheme()||'light');
     }
 }
 
