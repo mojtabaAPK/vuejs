@@ -1,7 +1,6 @@
 <template>
     <div class="flex items-center content-center gap-2">
 
-        <Drop-down/>
         <toggle-theme/>
 
     </div>
