@@ -1,6 +1,10 @@
 ## vuejs v3 + vue-router v4 + Daisyui v5 + Tailwindcss v4
 
-## Install
+## Download
+
+[Download latest release](../../releases/latest)
+
+## OR Install
 
 #### Get files
 
