@@ -1,7 +1,7 @@
 {
 	"name": "flow_chart_programming",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
 	"imports": {
 		"#css": "./src/assets/styles/style.css"
