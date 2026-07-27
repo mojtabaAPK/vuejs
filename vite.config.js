@@ -1,25 +1,33 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite'
 
-import { fileURLToPath, URL } from 'node:url';
+import { fileURLToPath, URL } from 'node:url'
 
-export default defineConfig({
-	base: "/vuejs/",
+export default defineConfig(({ command }) => ({
+	base: command === 'build' ? '/vuejs/' : '/',
+
 	resolve: {
 		alias: {
 			'@': fileURLToPath(new URL('./src', import.meta.url)),
 		},
 	},
+
 	define: {
 		__VUE_OPTIONS_API__: false,
-		__VUE_PROD_DEVTOOLS__: false
+		__VUE_PROD_DEVTOOLS__: false,
 	},
-	plugins: [vue(), tailwindcss(),],
+
+	plugins: [
+		vue(),
+		tailwindcss(),
+	],
+
 	server: {
 		port: 80,
 		host: '0.0.0.0',
 	},
+
 	preview: {
 		port: 45,
 		host: '0.0.0.0',
@@ -27,7 +35,6 @@ export default defineConfig({
 
 	build: {
 		ssr: false,
-		cssMinify: true
+		cssMinify: true,
 	},
-
-})
+}))
