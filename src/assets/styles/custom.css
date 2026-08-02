@@ -38,8 +38,64 @@
 	height:revert;
 }
 
+
+@utility swap {
+	@apply items-center;
+	
+	@apply hover:bg-primary/15;
+	&:hover{
+		@apply bg-base-content/10;
+		@apply dracula:bg-base-content/30;
+	}
+	@apply transition-[background,border,text] duration-300;
+	>input {
+		@apply transition-[background,border,text] duration-300;
+		@apply shadow-[none];
+		@apply w-[inherit] h-[inherit];
+		outline: none;
+		&:focus-visible{
+			outline: none;
+			outline-width: 0;
+			@apply bg-base-content/10;
+			@apply rounded-lg;
+			@apply dracula:bg-base-content/30;
+		}
+	}
+	>.swap-on, >.swap-off{
+		@apply m-auto;
+	}
+}
+@utility table {
+	:where(th) {
+		padding: 3px;
+	}
+}
+@utility btn {
+	outline: none;
+	@apply h-auto;
+	@apply transition-[background,border,text] duration-300;
+	@apply shadow-[none];
+	&:focus-visible{
+		outline: none;
+		outline-width: 0;
+		@apply bg-base-content/10;
+		@apply dracula:bg-base-content/30;
+	}
+	&:hover{
+		@apply bg-base-content/10;
+		@apply dracula:bg-base-content/30;
+	}
+}
+
 @custom-variant active-link {
 	&.router-link-active {
+		@slot;
+	}
+}
+
+
+@custom-variant dracula {
+	&:where([data-theme=dracula], [data-theme=dracula] *) {
 		@slot;
 	}
 }

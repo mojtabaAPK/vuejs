@@ -1,43 +1,43 @@
 <template>
-    <div class="one">
-        <router-link :to='{ name: "home" }'>
-            <home />
-        </router-link>
-        <router-link :to='{ name: value }' v-for="(value, key) in links">
-            {{key}}
-        </router-link>
-    </div>
+	<router-link :to="{ name: 'home' }" class="menu-item">
+		<home />
+	</router-link>
+	<router-link :to="{ name: value }" v-for="(value, key) in links" class="menu-item">
+		{{ key }}
+	</router-link>
 </template>
 
 <style scoped>
-@reference "@/assets/styles/style.css";
-.one {
-    @apply flex flex-1 items-center gap-1;
-    & a {
-        @apply btn btn-ghost text-base p-2 px-3 min-h-0 h-auto items-center;
-        @apply active-link:border-b-neutral-content! border-0 border-b-4! rounded-b-sm;
-    }
+@reference "#css";
+.menu-item {
+    @apply relative z-1 flex items-center justify-center;
+    @apply transition-all duration-300;
+    @apply text-base btn btn-ghost;
+    @apply h-11 px-3 py-0;
+	@apply rounded-none;
+    @apply active-link:border-b-neutral-content! border-0 border-b-4!;
+}
+.menu-item:hover {
+    anchor-name: --hover-item;
 }
 
 </style>
 
 <script>
-
-import home             from '@/components/icons/home.vue';
+import home from "@/components/icons/home.vue";
 
 export default {
-    components:{
-        home,
-    },
-    data(){
-        return {
-            links:{
-                //text:to_link_name
-                test:'test',
-                chart:'chart'
-            }
-        }
-    },
-}
-
+	components: {
+		home,
+	},
+	data() {
+		return {
+			links: {
+				//text:to_link_name
+				test: "test",
+				chart: "chart",
+			},
+		};
+	},
+};
 </script>
