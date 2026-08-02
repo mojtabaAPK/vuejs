@@ -48,7 +48,7 @@ export default {
     
 }
 
-.menu:has(.menu-item:hover) .menu-bg {
+.menu:has(.menu-item:hover) .menu-bg,.menu:has(.menu-item:focus) .menu-bg {
     @apply opacity-100;
 }
 

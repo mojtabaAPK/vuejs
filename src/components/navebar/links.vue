@@ -17,7 +17,7 @@
 	@apply rounded-none;
     @apply active-link:border-b-neutral-content! border-0 border-b-4!;
 }
-.menu-item:hover {
+.menu-item:hover ,.menu-item:focus {
     anchor-name: --hover-item;
 }
 
